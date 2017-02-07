@@ -3,6 +3,7 @@ Simple structure component that consists default top-bar, bottom-bar and menu dr
 This component contains needed structure for a view: the top nav bar, the bottom bar, the menu drawer and the body section.
 
 Usage:
+
 <ViewStructure 
 	// Top bar - iOS and Android
 	topBar={true}
