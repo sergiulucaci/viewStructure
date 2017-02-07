@@ -1,8 +1,14 @@
 # viewStructure
 Simple structure component that consists default top-bar, bottom-bar and menu drawer.
-This component contains needed structure for a view: the top nav bar, the bottom bar, the menu drawer and the body section.
+This component consists needed structure for a view: the top nav bar, the bottom bar, the menu drawer and the body section.  
 
 Usage:
+```
+'use strict';
+import React, { Component } from 'react';
+import ViewStructure from 'view-structure';
+
+class BadInstagramCloneApp extends Component {
 
 <ViewStructure 
 	// Top bar - iOS and Android
@@ -45,3 +51,4 @@ Usage:
 >
 	// The body of the view
 </ViewStructure>
+```
