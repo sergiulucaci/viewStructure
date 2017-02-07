@@ -45,7 +45,8 @@ class BasicView extends Component {
 				// Menu Button - children
 				menuDrawerFirstChildText=“Home”
 				menuDrawerFirstChildIcon={menuFirstChildIcon}
-				menuDrawerFirstChildIconOnPress={() => this.navigateTo(‘home)}
+				menuDrawerFirstChildOnPress={() => this.navigateTo(‘home)}
+				menuDrawerFirstChildStyle={styles.menuDrawerStyle}
 			  // The next children for menu drawer (menuDrawer[Second, Third, Fourth++]ChildText) similar                                   with menuDrawerFirstChildText
 			>
 				// The body of the view
