@@ -1,5 +1,5 @@
 # viewStructure
-This component consists needed structure for a view: the top nav bar, the bottom bar, the menu drawer and the body section.  
+This component consists needed structure for a view: the top nav bar, the bottom bar, the menu drawer and the body section. All sections can have children that can trigger actions, can be stylized, can be characterized by icons, etc. 
 
 Usage:
 ```
@@ -18,6 +18,7 @@ class BasicView extends Component {
 				topBarLeftButtonIcon={leftIcon}
 				topBarLeftButtonText=“Back”	
 				topBarLeftButtonStyle={styles.leftButtonStyle}
+				topBarLeftButtonOnPress={() => this.navigateTo(‘home)}
 				// Top bar - title
 				topBarTitleButtonIcon={icon}
 				topBarTitleText=“Home”
@@ -26,6 +27,7 @@ class BasicView extends Component {
 				topBarRightButtonIcon={leftIcon}
 				topBarRightButtonText=“Back”	
 				topBarRightButtonStyle={styles.leftButtonStyle}
+				topBarRightButtonOnPress={() => this.navigateTo(‘otherView')}
 
 				// Bottom bar - iOS
 				bottomBar={true}
@@ -34,11 +36,8 @@ class BasicView extends Component {
 				bottomBarFirstButtonIcon={leftIcon}
 				bottomBarFirstButtonText=“Back”	
 				bottomBarFirstButtonStyle={styles.leftButtonStyle}
-				// Bottom bar - second button
-				bottomBarSecondButtonIcon={icon}
-				bottomBarSecondText=“Home”
-				bottomBarSecondStyle={styles.leftButtonStyle}	
-				// Bottom bar - thirdButton, fourthButton - similar to first and second button. 
+				bottomBarFirstButtonOnPress={() => this.navigateTo(‘home)}
+				// Bottom bar - secondButton,thirdButton, fourthButton - similar to first and second button. 
 				// Maximum of buttons for bottom bar is 4. 
 				// Menu button - iOS and Android
 				menuDrawer={true}
